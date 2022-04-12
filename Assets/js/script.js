@@ -1,13 +1,7 @@
-let apiKey = "CnqqSdG2uxdCENbjxSli1crCs7uCHZTyWNXmPpXy"
+let container = document.querySelector("#container");
 
-let container = document.querySelector("#container")
+// quote generator fetch
 
-fetch('https://api.nasa.gov/planetary?api_key=CnqqSdG2uxdCENbjxSli1crCs7uCHZTyWNXmPpXy', {
-})
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log(data);
-    // container.innerHTML = data.
-  });
+fetch("https://ron-swanson-quotes.herokuapp.com/v2/quotes")
+  .then((response) => response.json())
+  .then((data) => (container.innerHTML = data));
