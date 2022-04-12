@@ -1,0 +1,10 @@
+#currentImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imagesWithQuotes{
+    width: 500px;
+    height: 500px;
+}
