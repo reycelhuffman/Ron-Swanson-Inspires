@@ -1,11 +1,10 @@
-let apiKey = "CnqqSdG2uxdCENbjxSli1crCs7uCHZTyWNXmPpXy"
+// let container = document.querySelector("#container")
 
-let container = document.querySelector("#container")
-
-fetch('https://api.nasa.gov/planetary?api_key=CnqqSdG2uxdCENbjxSli1crCs7uCHZTyWNXmPpXy', {
+fetch(`https://api.thecatapi.com/v1/images/search`, {
 })
   .then(function (response) {
-    return response.json();
+    // console.log()
+    return response.json()
   })
   .then(function (data) {
     console.log(data);
