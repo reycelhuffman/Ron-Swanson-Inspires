@@ -16,3 +16,4 @@ fetch(`https://api.thecatapi.com/v1/images/search`, {})
     console.log(data);
     // container.innerHTML = data.
   });
+  
