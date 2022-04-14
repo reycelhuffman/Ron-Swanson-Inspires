@@ -17,23 +17,31 @@
         <header class="header">
             <h1>Ron Swanson Inspiration</h1>
         </header>
+        <section class="ronSwonsonButton">
+            <button type="button" class="btn btn-primary btn-sm">Get Inspired
+                    
+            </button>
+        </section>
         <section class="page-flexbox">
-            <div class="randomCatImg">
-                <img id="currentImg" src="" alt="Random Image"></img>
-                <h3 id="currentQuote">Quote</h3>
-            </div>
-            <section><button type="button" class="btn btn-primary btn-sm">Get Inspired</button>
+            <section>
+                <div class="randomCatImg">
+                    <img id="currentImg" src="" alt="Random Image"></img>
+                </div>
             </section>
-            <section class="imagesWithQuotes"></section>
-            
-            
-            <section class="quotes-container d-flex flex-wrap">
-               
+                <section class="currentQuoteBox">
+                    <h3 id="currentQuote">Quote</h3>
+                </section>
+            <!-- <section class="imagesWithQuotes"></section> -->
+            <!-- <section class="quotes-container d-flex flex-wrap">
+            </section>
+            </section>
+            <h3 id="currentQuote">Quote</h3> -->
+            <section>
+                <button type="button" class="btn btn-primary btn-sm nextButton" id="secondBtn">Next Button</button>
+            </section>
+            <section class="quotes-container d-flex flex-wrap" id="pastQuotes">
             </section>
         </section>
-        <h3 id="currentQuote">Quote</h3>
-        <button type="button" class="btn btn-primary btn-sm" id="secondBtn">Get Inspired</button>
-        <section class="quotes-container d-flex flex-wrap" id="pastQuotes"></section>
     </main>
 </body>
 <script src="./Assets/js/script.js"></script>

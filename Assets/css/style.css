@@ -1,46 +1,92 @@
 .randomCatImg{
-    max-width: 2000%;
-    max-height: 200%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    display: block;
-    justify-content: center;
-    margin-left: 37%;
+    display: flex;
+    justify-content: left;flex-wrap: wrap;
+    
+}
+
+.currentQuoteBox{
+    /* display: flex;
+    flex-wrap: wrap ; */
+    width: 30%;
+    height: 60%;
+    min-width: 300px;
+    /* margin: 1%; */
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+    padding: .5%;
+    box-shadow: 0px 0px 10px 2px black;
+    margin-left: 2%;
+
 }
 #currentImg{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
+    justify-content: left;
+    background-image: url("");
+    box-shadow: 0px 0px 10px 2px black;
+    
 }
 .imagesWithQuotes{
     width: 500px;
     height: 500px;
 }
 body{
-   background-image: url("/Assets/be9e12121863979.Y3JvcCwxNDI4LDExMTcsMTE2NiwzNjA.png");
-   background-repeat: no-repeat;
- }
-h1 {color: rgb(40, 191, 60);
+
+}
+/* h1 {color: rgb(40, 191, 60);
     text-align: center;
     border: 2px;
     margin: 3px;
 
-}
+} */
 
 .header h1{
     text-align: center;
     width: 100%;
+    color:rgb(210, 151, 62);
+    font: Tahoma;
+}
+
+.ronSwonsonButton{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    
 }
 .page-flexbox{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px;
+    background-color: rgb(210, 151, 62);
+    padding: 2%;
 
 }
-.btn btn-primary btn-sm{
-    align-content: flex-end;
+.btn {
+    box-shadow: 0px 0px 10px 2px rgb(187, 196, 67);
+    
 }
 
+.nextButton{
+    margin-top: 260px;
+}
 .header img{
     width: 20%;
     height: 20%;
     align-items: center;
     display: flex;
     margin-right:  40%;
+}
+.quotes-container {
+    font-size: 10pt;
+    
+    margin: 1%;
+}
+#pastQuotes p {
+    box-shadow: 0px 0px 10px 2px black;
 }
