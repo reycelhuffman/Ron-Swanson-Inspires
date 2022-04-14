@@ -1,10 +1,46 @@
-#currentImg{
-    width: 100%;
-    height: 100%;
+.randomCatImg{
+    max-width: 2000%;
+    max-height: 200%;
     object-fit: contain;
+    display: block;
+    justify-content: center;
+    margin-left: 37%;
 }
-
+#currentImg{
+    height: 500px;
+    width: 500px;
+}
 .imagesWithQuotes{
     width: 500px;
     height: 500px;
+}
+body{
+   background-image: url("/Assets/be9e12121863979.Y3JvcCwxNDI4LDExMTcsMTE2NiwzNjA.png");
+   background-repeat: no-repeat;
+ }
+h1 {color: rgb(40, 191, 60);
+    text-align: center;
+    border: 2px;
+    margin: 3px;
+
+}
+
+.header h1{
+    text-align: center;
+    width: 100%;
+}
+.page-flexbox{
+    display:flex;
+
+}
+.btn btn-primary btn-sm{
+    align-content: flex-end;
+}
+
+.header img{
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    display: flex;
+    margin-right:  40%;
 }
