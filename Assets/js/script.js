@@ -1,8 +1,8 @@
 // global variables
-let currentImg = document.querySelector("#currentImg");
-let currentQuote = document.querySelector("#currentQuote");
-let memeButton = document.querySelector("#getMeme");
-let nextButton = document.querySelector("#nextButton");
+let currentImg = document.querySelector(".randomCatImg");
+let currentQuote = document.querySelector(".currentQuoteBox");
+let memeButton = document.querySelector(".getMeme");
+let nextButton = document.querySelector(".nextButton");
 let pageFlexbox = document.querySelector(".page-flexbox");
 let pastQuotes = document.querySelector(".quotes-container");
 // event listeners
@@ -45,10 +45,10 @@ function getMeme() {
       console.log(storedMemeArray);
       localStorage.setItem("storedMemes", JSON.stringify(storedMemeArray));
       pastMemes();
+      // unhiding main content of page and hides initial start button
+      memeButton.hidden = true;
+      pageFlexbox.hidden = false;
     });
-  // unhiding main content of page and hides initial start button
-  memeButton.hidden = true;
-  pageFlexbox.hidden = false;
 }
 // creates buttons for past memes
 function pastMemes() {
@@ -57,6 +57,7 @@ function pastMemes() {
     let oldMemeBtn = document.createElement("button");
     oldMemeBtn.innerText = storedMemeArray[i].quote;
     oldMemeBtn.setAttribute("data-index", i);
+    oldMemeBtn.classList.add("col-2", "border", "rounded", "histBtnBack", "m-1")
     pastQuotes.append(oldMemeBtn);
   }
 }

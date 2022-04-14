@@ -12,36 +12,17 @@
 </head>
 
 <body>
-
-    <main>
-        <header class="header">
-            <h1>Ron Swanson Inspiration</h1>
-        </header>
-        <section class="ronSwonsonButton">
-            <button type="button" class="btn btn-primary btn-sm" id="getMeme">Get Inspired
-                    
-            </button>
+    <header class="header">
+        <h1>Ron Swanson Inspiration</h1>
+        <button type="button" class="getMeme btn btn-primary btn-sm">Get Inspired</button>
+    </header>
+    <main class="page-flexbox">
+        <section class="d-flex flex-wrap flex-column align-items-center">
+            <img class="randomCatImg" src="" alt="Random Image"></img>
+            <p class="currentQuoteBox"></p>
+            <button type="button" class="btn btn-primary btn-sm nextButton">Next Button</button>
         </section>
-        <section class="page-flexbox">
-            <section>
-                <div class="randomCatImg">
-                    <img id="currentImg" src="" alt="Random Image"></img>
-                </div>
-            </section>
-                <section class="currentQuoteBox">
-                    <h3 id="currentQuote">Quote</h3>
-                </section>
-            <!-- <section class="imagesWithQuotes"></section> -->
-            <!-- <section class="quotes-container d-flex flex-wrap">
-            </section>
-            </section>
-            <h3 id="currentQuote">Quote</h3> -->
-            <section>
-                <button type="button" class="btn btn-primary btn-sm nextButton" id="nextButton">Next Button</button>
-            </section>
-            <section class="quotes-container d-flex flex-wrap" id="pastQuotes">
-            </section>
-        </section>
+        <section class="quotes-container d-flex flex-wrap justify-content-center"></section>
     </main>
 </body>
 <script src="./Assets/js/script.js"></script>
