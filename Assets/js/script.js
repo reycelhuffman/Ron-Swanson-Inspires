@@ -5,9 +5,11 @@ let memeButton = document.querySelector(".getMeme");
 let nextButton = document.querySelector(".nextButton");
 let pageFlexbox = document.querySelector(".page-flexbox");
 let pastQuotes = document.querySelector(".quotes-container");
+
 // event listeners
 memeButton.addEventListener("click", getMeme);
 nextButton.addEventListener("click", getMeme);
+
 // iterates over past quotes and replaces current quote/img
 pastQuotes.addEventListener("click", function (event) {
   let selectedQuote = event.target;
@@ -18,6 +20,7 @@ pastQuotes.addEventListener("click", function (event) {
     }
   }
 });
+
 // hide next button from start
 pageFlexbox.hidden = true;
 // initializing stored memes for local storage
@@ -25,8 +28,8 @@ let storedMemeArray = [];
 // pulls memes from local storage
 if (localStorage.storedMemes !== undefined) {
   storedMemeArray = JSON.parse(localStorage.storedMemes);
-  console.log(storedMemeArray);
 }
+
 // fetch api to get quotes and images - stores in local storage
 function getMeme() {
   let storedMeme = {};
@@ -42,7 +45,6 @@ function getMeme() {
       currentImg.setAttribute("src", data[0].url);
       storedMeme.img = data[0].url;
       storedMemeArray.push(storedMeme);
-      console.log(storedMemeArray);
       localStorage.setItem("storedMemes", JSON.stringify(storedMemeArray));
       pastMemes();
       // unhiding main content of page and hides initial start button
@@ -50,6 +52,7 @@ function getMeme() {
       pageFlexbox.hidden = false;
     });
 }
+
 // creates buttons for past memes
 function pastMemes() {
   pastQuotes.innerHTML = "";
@@ -57,7 +60,7 @@ function pastMemes() {
     let oldMemeBtn = document.createElement("button");
     oldMemeBtn.innerText = storedMemeArray[i].quote;
     oldMemeBtn.setAttribute("data-index", i);
-    oldMemeBtn.classList.add("col-2", "border", "rounded", "histBtnBack", "m-1")
+    oldMemeBtn.classList.add("col-3", "border", "rounded", "border-dark", "histBtnBack", "m-1")
     pastQuotes.append(oldMemeBtn);
   }
 }

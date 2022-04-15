@@ -1,49 +1,50 @@
-
-.randomCatImg{
+.randomCatImg {
     height: 300px;
-    width: 300px;
+    width: 400px;
     box-shadow: 0px 0px 10px 2px black;
 }
 
-.currentQuoteBox{
-    margin-top: 3%;
+.currentQuoteBox {
+    margin-top: 1rem;
     border: solid black 1px;
     border-radius: 10px;
     background-color: gray;
     color: white;
-    padding: .5%;
+    padding: 0.5rem;
     box-shadow: 0px 0px 10px 2px black;
 }
 
 .header {
     text-align: center;
-    padding: 2%;
+    padding: 1.25rem;
     background-color: lightgray;
     width: 100%;
-    color:rgb(195, 136, 250);
+    color:black;
     font: Tahoma;
-    text-shadow: 0.5px 0.5px 0.25px gray;
+    text-shadow: 0.5px 0.5px 0.25px rgb(195, 136, 250);
 }
 
-.getMeme{
-    margin-bottom: 1%;
+.getMeme {
+    margin-bottom: 1.25rem;
 }
-.page-flexbox{
+
+.page-flexbox {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border: 1px;
-    background-color: rgb(208, 244, 247);
-    padding: 2%;
+    padding: 2rem;
 }
+
 .nextButton {
-    margin-top: 1%;
+    margin-top: 1.25rem;
     box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
 }
 
 .quotes-container {
     font-size: 10pt;
-    margin: 1%;
+    margin: 1.25rem;
 }
 
 .quotes-container p {
@@ -52,4 +53,8 @@
 
 .histBtnBack {
     background-color: rgb(195, 136, 250);
+}
+
+.backColor {
+    background-color: rgb(208, 244, 247);
 }
